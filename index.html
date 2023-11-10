@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+</head>
+<body>
+    <div class="page-container">
+   <div class="fiexed">
+    <div class="sidemenu-container dark">
+        <div class="toggle-menu">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="sidemenu">
+            <div class="profile">
+                <div class="logo">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="text">Main Menu</div>
+            </div>
+            <ul class="side-menu-list">
+                <li class="menu-list">
+                    <div class="inner-list active">
+                        <div class="list-group-btn">
+                            <div class="icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div class="text">Dashboard</div>
+                        </div>
+                        <div class="inner-icon">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list">
+                    <div class="inner-list group-list">
+                        <div class="list-group-btn">
+                            <div class="icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="text">Students</div>
+                        </div>
+                        <div class="inner-icon">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <ul class="inner-options">
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <div class="text">Add Student</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="text">edit Student</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-check-square"></i>
+                                    </div>
+                                    <div class="text">Attendance</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <div class="inner-list group-list">
+                        <div class="list-group-btn">
+                            <div class="icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="text">Teachers</div>
+                        </div>
+                        <div class="inner-icon">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <ul class="inner-options">
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <div class="text">Add Teacher</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="text">edit Teacher</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-check-square"></i>
+                                    </div>
+                                    <div class="text">Attendance</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <div class="inner-list group-list">
+                        <div class="list-group-btn">
+                            <div class="icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div class="text">departments</div>
+                        </div>
+                        <div class="inner-icon">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <ul class="inner-options">
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class=" fas fa-plus"></i>
+                                    </div>
+                                    <div class="text">Add dept</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="text">edit dept</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                    <div class="text">delete dept</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <div class="inner-list group-list">
+                        <div class="list-group-btn">
+                            <div class="icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="text">classes</div>
+                        </div>
+                        <div class="inner-icon">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <ul class="inner-options">
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class=" fas fa-plus"></i>
+                                    </div>
+                                    <div class="text">Add class</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="text">edit class</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                    <div class="text">delete class</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-list">
+                    <div class="inner-list group-list">
+                        <div class="list-group-btn">
+                            <div class="icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <div class="text">sports</div>
+                        </div>
+                        <div class="inner-icon">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <ul class="inner-options">
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class=" fas fa-plus"></i>
+                                    </div>
+                                    <div class="text">Add sports</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="text">edit sports</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="options">
+                            <div class="option-inner-list">
+                                <div class="list-group-btn">
+                                    <div class="icon">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                    <div class="text">delete sports</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <main class="main">
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-btns">
+                        <span class="profile-card">
+                            <img src="img/avatar.png" alt="avatar">
+                        </span>
+                        <ul class="inner-nav-list">
+                            <li class="inner-nav-btns"><i class="fas fa-user"></i> Profile</li>
+                            <li class="inner-nav-btns"><i class="fas fa-pencil-alt"></i> Edit</li>
+                            <li class="inner-nav-btns"><i class="fas fa-sign-out-alt"></i> Logout</li>
+                        </ul>                        
+                    </li>
+                </ul>
+            </nav>
+            <div class="page-discribe">
+                <div class="role">Admin</div>
+                <p class="path-container"><span class="path">Dashboard</span> /</p>
+            </div>
+            <div class="admin-container">
+                <div class="count-container">
+                    <div class="student-count count-box">
+                        <p class="title"><span class="stud-logo count-logo">
+                            <img src="img/student.png" alt="">
+                        </span>Students</p>
+                        <span class="count" data-target="1500">0</span>
+                    </div>
+                    
+                    <div class="teacher-count count-box">
+                        <p class="title"><span class="teacher-logo count-logo">
+                            <img src="img/teacher.png" alt="">
+                        </span>Teachers</p>
+                        <span class="count" data-target="500">0</span>
+                    </div>
+                    
+                    <div class="department-count count-box">
+                        <p class="title"><span class="dept-logo count-logo">
+                            <img src="img/department.png" alt="">
+                        </span>Departments</p>
+                        <span class="count" data-target="4">0</span>
+                    </div> 
+                    
+                    <div class="department-count count-box">
+                        <p class="title"><span class="dept-logo count-logo">
+                            <img src="img/success.png" alt="cup">
+                        </span>Sports & Activities</p>
+                        <span class="count" data-target="10">0</span>
+                    </div> 
+                    
+                </div>
+                <div class="table-wrapper">
+                    <div class="frame">
+                        <div class="frame-nav frame-separate">
+                            <div class="frame-title">top Rank students list</div>
+                            <div class="drop-down">
+                                <div class="three-dot">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <table id="rankTable" class="table table-bordered table-striped rank-table">
+                                <thead>
+                                    <tr>
+                                        <th data-sortable="true">Sno</th>
+                                        <th data-sortable="true">Roll No</th>
+                                        <th>Profile</th>
+                                        <th data-sortable="true">Name</th>
+                                        <th data-sortable="true">Standard</th>
+                                        <th data-sortable="true">Section</th>
+                                        <th data-sortable="true">Rank</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableBody">
+                                    <!-- Dynamic insertion of rows will happen here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="frame-container">
+                <iframe src="" frameborder="0" class="iframe" width="100%" height="100%"></iframe>
+            </div> -->
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/dashboard.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+    // Initialize DataTable with sorting and pagination
+    $(document).ready(function () {
+        var dataTable = $('#rankTable').DataTable({
+            "pagingType": "full_numbers",
+            "pageLength": 5 // Set the number of rows per page
+        });
+
+        // Insert 15 rows dynamically
+        for (var i = 1; i <= 15; i++) {
+            dataTable.row.add([
+                i,
+                '#000' + i,
+                '<img src="img/avatar.png" alt="" class="table-profile">',
+                'Name' + i,
+                '12',
+                'A',
+                '#' + i,
+                '<button type="button" class="btn btn-info view"><i class="fas fa-eye"></i></button>'
+            ]).draw();
+        }
+
+    });
+</script>
+</body>
+</html>
+

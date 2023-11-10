@@ -1,0 +1,111 @@
+.table-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.frame{
+    max-width: calc(100%);
+    min-height: 400px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.frame-seperate{
+    flex-basis: 12%;
+    width: 100%;
+    height: 100%;
+    background: #b3b3b3;
+    position: relative;
+}
+
+.table-container{
+    width: 100%;
+    height: 100%;
+    flex-basis: 88%;
+    position: relative;
+}
+
+.frame-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.frame-title{
+    color: #272727;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.three-dot{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.dot{
+    width: 4px ;
+    height: 4px;
+    border-radius: 50%;
+    background: #272727;
+}
+
+.frame-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.pagination{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+.pagenumber{
+    padding: 7px 12px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.pagenumber.active, .pagenumber:hover{
+    background: #0000ff;
+    color: #ffffff;
+}
+
+.rank-table{
+    width: 100%;
+}
+
+.table-profile{
+    width: 35px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
